@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app="sample" ng-controller="AppCtrl">
+
+<head>
+  <title ng-bind="Garage Sale Finder"></title>
+  <!--  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="https://storage.googleapis.com/feednami-static/js/feednami-client-v1.0.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.2/jquery.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- font awesome from BootstrapCDN -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="search/search.css">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-route.js"></script>
+ 
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="search/search.js"></script>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+  <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+  <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+  <meta name="msapplication-wide310x150logo" content="images/widetile.png" />
+  <meta name="msapplication-square310x310logo" content="images/largetile.png" />
+  <script type="text/javascript">
+  if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+    var myDiv;
+    console.origLog = console.log;
+    console.log = function(x) {
+      if (!myDiv) myDiv = document.getElementById('div');
+      if (myDiv) myDiv.innerHTML = myDiv.innerHTML + x;
+      else console.origLog("can not determine myDiv");
+    }
+  }
+  </script>
+</head>
+<nav class="navbar navbar-default">
+  <div class="fluid-container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> -->
+<!--         <span class="sr-only">Toggle navigation</span>
+        <i class="glyphicon glyphicon-menu-hamburger" style="font-size:'50px';"></i> -->
+      </button>
+      <center><a class="navbar-brand title" href="#/">Garage Sale Finder</a></center>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#/item" ng-click="addItem()"><i class="glyphicon glyphicon-plus"></i> Add Item</a></li>
+        <li><a href="#/past"><i class="glyphicon glyphicon-book"></i> Past Finds</a></li>
+        <li><a href="#/search"><i class="glyphicon glyphicon-search"></i> Search</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/login" ng-click="logout()"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
+      </ul>
+    </div>
+     /.navbar-collapse
+  </div> -->
+  <!-- /.container-fluid -->
+</nav>
+
+<body>
+  <div ng-view></div>
+</body>
+<div id="div"></div>
+
+</html>
