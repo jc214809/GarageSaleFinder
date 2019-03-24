@@ -107,6 +107,7 @@
         }
 
         $scope.getCurrentUserLocation = function() {
+          $scope.zipcode =null;
           $scope.listings = [];
           window.navigator.geolocation.getCurrentPosition(function(pos) {
             $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + pos.coords.latitude + ',' + pos.coords.longitude + '&sensor=true&key=AIzaSyCkk2guPfwd0SPhb93GJ-nUmb5Xy-Hgq3Q').then(function(res) {
