@@ -2,30 +2,30 @@
   <h1>Listings</h1>
   <form id="search" class="form-horizontal" ng-submit="updateSearch()">
     <fieldset class="form-group">
-      <label for="zipcode">Zip code:</label>
-      <input type="number" ng-model="zipcode" maxlength="5" minlength="5" name="zipcode" style="width: 60px; text-align: center;">
-      <label for="miles">Distance:</label>
-      <select name="miles" ng-model="miles">
-        <option value="5">5 Miles</option>
-        <option value="10">10 Miles</option>
-        <option value="15">15 Miles</option>
-        <option value="20">20 Miles</option>
-        <option value="25">25 Miles</option>
-        <option value="30">30 Miles</option>
-        <option value="50">50 Miles</option>
-      </select>
+      <center>
+        <label for="zipcode">Zip code:</label>
+        <input type="number" ng-model="zipcode" maxlength="5" minlength="5" name="zipcode" style="width: 60px; text-align: center;">
+        <label for="miles">Distance:</label>
+        <select name="miles" ng-model="miles">
+          <option value="5">5 Miles</option>
+          <option value="10">10 Miles</option>
+          <option value="15">15 Miles</option>
+          <option value="20">20 Miles</option>
+          <option value="25">25 Miles</option>
+          <option value="30">30 Miles</option>
+          <option value="50">50 Miles</option>
+        </select>
+      </center>
       <div class="">
         <div class="make-center">
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Garage Sale')" id="garage-sale" checked>
             <label for="garage-sale">Garage Sale</label>
           </div>
-          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Yard Sale')" id="yard-sale" checked>
             <label for="yard-sale">Yard Sale</label>
           </div>
-          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Community Sale')" id="community-sale" checked>
             <label for="community-sale">Community Sale</label>
@@ -36,12 +36,10 @@
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Community Garage Sale')" id="community-garage-sale" checked>
             <label for="community-garage-sale">Community Garage Sale</label>
           </div>
-          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Moving Sale')" id="moving-sale" checked>
             <label for="moving-sale">Moving Sale</label>
           </div>
-          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Barn Sale')" id="barn-sale" checked>
             <label for="barn-sale">Barn Sale</label>
@@ -52,12 +50,10 @@
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Tag Sale')" id="tag-sale">
             <label for="tag-sale">Tag Sale</label>
           </div>
-          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Estate Sale')" id="estate-sale">
             <label for="estate-sale">Estate Sale</label>
           </div>
-          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Rummage Sale')" id="rummage-sale">
             <label for="rummage-sale">Rummage Sale</label>
