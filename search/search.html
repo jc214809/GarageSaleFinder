@@ -20,12 +20,12 @@
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Garage Sale')" id="garage-sale" checked>
             <label for="garage-sale">Garage Sale</label>
           </div>
-          &nbsp;
+          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Yard Sale')" id="yard-sale" checked>
             <label for="yard-sale">Yard Sale</label>
           </div>
-          &nbsp;
+          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Community Sale')" id="community-sale" checked>
             <label for="community-sale">Community Sale</label>
@@ -36,12 +36,12 @@
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Community Garage Sale')" id="community-garage-sale" checked>
             <label for="community-garage-sale">Community Garage Sale</label>
           </div>
-          &nbsp;
+          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Moving Sale')" id="moving-sale" checked>
             <label for="moving-sale">Moving Sale</label>
           </div>
-          &nbsp;
+          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Barn Sale')" id="barn-sale" checked>
             <label for="barn-sale">Barn Sale</label>
@@ -52,12 +52,12 @@
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Tag Sale')" id="tag-sale">
             <label for="tag-sale">Tag Sale</label>
           </div>
-          &nbsp;
+          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Estate Sale')" id="estate-sale">
             <label for="estate-sale">Estate Sale</label>
           </div>
-          &nbsp;
+          
           <div>
             <input type="checkbox" name="keywords" ng-click="toggleKeywordSearch('Rummage Sale')" id="rummage-sale">
             <label for="rummage-sale">Rummage Sale</label>
@@ -71,7 +71,7 @@
   <div>
     <hr>
     <div ng-repeat="listing in listings">
-      <a target="_blank" href="{{listing.link}}">{{listing.title}}</a>&nbsp;<span class="badge badge-pill badge-primary purple" ng-repeat="date in listing.saleDates track by $index" ng-bind="date"></span>
+      <a target="_blank" href="{{listing.link}}">{{listing.title}}</a><span class="badge badge-pill badge-primary purple" ng-repeat="date in listing.saleDates track by $index" ng-bind="date"></span>
       <p>{{listing.description}}</p>
       <hr>
     </div>

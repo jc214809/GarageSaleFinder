@@ -7,3 +7,9 @@
   justify-content: center;
   align-items: center;
 }
+
+.title {
+  color: rebeccapurple !important;
+  font-size: 150%;
+  font-weight: bold;
+}
